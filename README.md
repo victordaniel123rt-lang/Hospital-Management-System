@@ -2,7 +2,7 @@
 
 Una implementación de referencia de una arquitectura de microservicios para la gestión hospitalaria. Está pensada para demostrar comunicación síncrona (OpenFeign) y asíncrona (Apache Kafka), descubrimiento de servicios (Eureka), un API Gateway y varios microservicios independientes con sus propias bases de datos. El código principal está en Java 17 y usa Spring Boot / Spring Cloud.
 
-> Nota: el README incorpora el diagrama de arquitectura que compartiste (gateway, Eureka, Kafka, servicios, bases de datos). Revisa los `application.properties` / `application.yml` de cada módulo para puertos y configuraciones concretas — aquí se incluyen valores indicativos que aparecen en el diagrama.
+![Arquitectura del sistema](docs/hosp.png)
 
 Características principales
 - Arquitectura de microservicios con Spring Cloud (Eureka, Gateway).
@@ -126,12 +126,4 @@ Preguntas frecuentes y troubleshooting
 Contribuciones
 - Abre issues con ideas o bugs y envía pull requests. Mantén los cambios por módulo y actualiza `common-dtos` cuando cambien los contratos.
 
-Licencia
-- Añade el archivo LICENSE si quieres publicar con una licencia concreta. (No incluido en este repo por defecto.)
 
----
-
-Si quieres, puedo:
-- Crear el archivo README.md en el repo (si lo deseas, puedo preparar el commit).
-- Generar ejemplos concretos de `application.yml` para cada servicio (puertos, Kafka, datasource).
-- Añadir instrucciones para levantar MariaDB con Docker Compose y scripts de inicialización.
